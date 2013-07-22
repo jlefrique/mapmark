@@ -5,7 +5,6 @@ import json
 from urllib import urlopen, urlencode
 
 NOMINATIM_URL = "http://open.mapquestapi.com/nominatim/v1/search?format=json&%s"
-JSON_FILENAME = "places.geojson"
 
 
 class MapmarkException(Exception):
@@ -76,7 +75,7 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input', help='Input text file',
                         default='locations.txt')
     parser.add_argument('-o', '--output', help='Output file (GeoJSON)',
-                        default='locations.geojson')
+                        default='locations.json')
 
     args = parser.parse_args()
 
