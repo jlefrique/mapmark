@@ -1,0 +1,61 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6.1838123, 
+                    48.6928048
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "Nancy, France", 
+                "show_on_map": true
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6.1466014, 
+                    46.2017559
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "Geneva, Switzerland", 
+                "show_on_map": true
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    2.3521334, 
+                    48.8565056
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "Paris, France", 
+                "show_on_map": true
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6.6327025, 
+                    46.5218269
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "Lausanne, Switzerland", 
+                "show_on_map": true
+            }
+        }
+    ]
+}

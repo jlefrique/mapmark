@@ -53,12 +53,21 @@ class Mapmark(object):
 
         features = []
 
+        print("Converting locations to GeoJSON...")
+
         with open(input, 'r') as f:
             for place in f.readlines():
                 features.append(self.place_to_geojson(place.rstrip()))
 
+        geojson = {
+                "type": "FeatureCollection",
+                "features": features,
+        }
+
         with open(output, 'w') as f:
-            f.write(json.dumps(features, indent=4))
+            f.write(json.dumps(geojson, indent=4))
+
+        print("done")
 
 
 def main(input, output):
@@ -75,7 +84,7 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input', help='Input text file',
                         default='locations.txt')
     parser.add_argument('-o', '--output', help='Output file (GeoJSON)',
-                        default='locations.json')
+                        default='locations.geojson')
 
     args = parser.parse_args()
 
